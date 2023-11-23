@@ -78,6 +78,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 Modular.to.navigate('/second');
               },
             ),
+            ElevatedButton(
+              child: const Text('Go to Login from a redirect'),
+              onPressed: () {
+                Modular.to.navigate('/redirect');
+              },
+            ),
           ],
         ),
       ),

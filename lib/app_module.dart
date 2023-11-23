@@ -17,5 +17,6 @@ class AppModule extends Module {
     r.child('/second',
         child: (context) => const SecondPage(), guards: [AuthGuard()]);
     r.child('/login', child: (context) => const LoginPage());
+    r.redirect('/redirect', to: '/login');
   }
 }
